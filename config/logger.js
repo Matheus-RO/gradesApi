@@ -14,7 +14,7 @@ const myFormat = format.printf(({ level, message, label, timestamp }) => {
 
 const logger = createLogger({
   transports: [
-    new transports.Console(), //  Pode dar erro no HEROKU
+    //new transports.Console(), //  Pode dar erro no HEROKU
     new transports.MongoDB({
       level: 'info',
       db: process.env.MONGODB,
