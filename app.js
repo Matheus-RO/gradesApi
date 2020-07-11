@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'http://localhost:3001', // aqui vai o endereço do dominínio do front end publicado no heroku
+    origin: 'https://grades-front.herokuapp.com/',
   })
 );
 
